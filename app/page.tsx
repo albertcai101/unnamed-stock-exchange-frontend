@@ -12,29 +12,24 @@ export default function Home() {
         return (
             <div className="relative flex w-full flex-col items-start">
                 <section className="mx-auto flex flex-col items-start gap-2 px-4 py-8 md:py-12 md:pb-8 lg:py-12 lg::pb-10 w-full">
-                    <a className="group inline-flex items-center px-0.5 text-sm font-medium" href="https://editor.rive.app/" target="_blank" rel="noopener noreferrer">
+                    <a className="group inline-flex items-center px-0.5 text-sm font-medium" href="/ipo" target="_blank" rel="noopener noreferrer">
                         <LaptopIcon className="h-4 w-4" />
                         <Separator orientation="vertical" className="mx-2 h-4" />
-                        <span className="underline-offset-4 group-hover:underline">open rive editor</span>
+                        <span className="underline-offset-4 group-hover:underline">IPO your own stock</span>
                         <ArrowRight className="h-4 w-4 ml-1" />
                     </a>
-                    <h1 className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl lg:leading-[1.1] hidden md:block">
-                        Rive Web Runtime, Upgraded.
+                    <h1 className="text-4xl font-bold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1] hidden md:block">
+                        Welcome to PTERODAQ
                     </h1>
-                    <h1 className="text-3xl font-bold leading-tight tracking-tighter md:text-4xl lg:leading-[1.1] md:hidden">
-                        Rive Runtime.
+                    <h1 className="text-4xl font-bold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1] md:hidden">
+                        Welcome to PTERODAQ
                     </h1>
-                    <p className="max-w-2xl text-lg font-light text-foreground"> Test interactions through animations and the state machine.</p>
+                    <p className="max-w-2xl text-lg font-light text-foreground"> Unlock capital. </p>
                     <div className="fex w-full items-center justify-start gap-2 py-2">
                         <div className="flex items-center gap-2">
-                            <a href="https://github.com/albertcai101/rive-rip" target="_blank" rel="noopener noreferrer">
-                                <Button size="xs">
-                                    Star on GitHub
-                                </Button>
-                            </a>
-                            <a href="https://rive.app/preview/" target="_blank" rel="noopener noreferrer">
-                                <Button size="xs" variant="ghost">
-                                    Use Old Rive Preview
+                            <a href="/auth" target="_blank" rel="noopener noreferrer">
+                                <Button size="xl">
+                                    Finish Signing Up
                                 </Button>
                             </a>
                         </div>
