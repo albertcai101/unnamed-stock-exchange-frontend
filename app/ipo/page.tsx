@@ -28,7 +28,7 @@ import { Input } from "@/components/ui/input"
 const formSchema = z.object({
     ticker: z.string().min(3).max(6),
     organization: z.string().min(3).max(100),
-    raiseGoal: z.number().min(0).max(1000000000),
+    raiseGoal: z.coerce.number().min(0).max(1000000000),
     description: z.string().min(3).max(280),
 });
 
@@ -89,7 +89,7 @@ function IPOForm() {
                         <FormItem>
                             <FormLabel>Raise Goal</FormLabel>
                             <FormControl>
-                                <Input type="number" placeholder="100" {...field} />
+                                <Input type="number" placeholder="100" {...field}/>
                             </FormControl>
                             <FormDescription>
                                 Enter the target capital raise goal in USD.
