@@ -188,7 +188,7 @@ export default function Home() {
       <h2 className="text-xl font-semibold mb-2">Market Maker Trade</h2>
       <div className="mb-6">
         <h3 className="font-semibold mb-2">Buy from Market Maker</h3>
-        <label className="block mb-2">
+        <label className="block mb-2" style={{ color: "red" }}>
           Buyer:
           <select
             className="ml-2 border rounded"
@@ -200,7 +200,7 @@ export default function Home() {
             <option value="Albert">Albert</option>
           </select>
         </label>
-        <label className="block mb-2">
+        <label className="block mb-2" style={{ color: "red" }}>
           Number of Shares:
           <input
             className="ml-2 border rounded"
@@ -218,7 +218,7 @@ export default function Home() {
         </button>
 
         <h3 className="font-semibold mb-2 mt-6">Sell to Market Maker</h3>
-        <label className="block mb-2">
+        <label className="block mb-2" style={{ color: "red" }}>
           Seller:
           <select
             className="ml-2 border rounded"
@@ -230,7 +230,7 @@ export default function Home() {
             <option value="Albert">Albert</option>
           </select>
         </label>
-        <label className="block mb-2">
+        <label className="block mb-2" style={{ color: "red" }}>
           Number of Shares:
           <input
             className="ml-2 border rounded"
