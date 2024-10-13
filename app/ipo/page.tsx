@@ -1,16 +1,18 @@
 "use client";
 
+import { useRouter } from 'next/navigation'
+
 import { zodResolver } from "@hookform/resolvers/zod"
 import { useForm } from "react-hook-form"
 import { z } from "zod";
 
 import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardFooter,
-  CardHeader,
-  CardTitle,
+    Card,
+    CardContent,
+    CardDescription,
+    CardFooter,
+    CardHeader,
+    CardTitle,
 } from "@/components/ui/card"
 
 import { Button } from "@/components/ui/button"
@@ -33,6 +35,8 @@ const formSchema = z.object({
 });
 
 function IPOForm() {
+    const router = useRouter();
+
     const form = useForm<z.infer<typeof formSchema>>({
         resolver: zodResolver(formSchema),
         defaultValues: {
@@ -45,6 +49,7 @@ function IPOForm() {
 
     function onSubmit(values: z.infer<typeof formSchema>) {
         console.log(values);
+        router.push('/badstockview');
     }
 
     return (
@@ -121,7 +126,6 @@ function IPOForm() {
 }
 
 export default function Page() {
-
 
     const component_header = () => {
         return (
