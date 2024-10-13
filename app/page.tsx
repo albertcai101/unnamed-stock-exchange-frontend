@@ -19,10 +19,10 @@ export default function Home() {
                         <ArrowRight className="h-4 w-4 ml-1" />
                     </a>
                     <h1 className="text-4xl font-bold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1] hidden md:block">
-                        Welcome to PTERODAQ
+                        Welcome to pteroDaQ
                     </h1>
                     <h1 className="text-4xl font-bold leading-tight tracking-tighter md:text-5xl lg:leading-[1.1] md:hidden">
-                        Welcome to PTERODAQ
+                        Welcome to pteroDaQ
                     </h1>
                     <p className="max-w-2xl text-lg font-light text-foreground"> Unlock capital. </p>
                     <div className="fex w-full items-center justify-start gap-2 py-2">
