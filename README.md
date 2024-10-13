@@ -1,5 +1,10 @@
 This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
 
+## Special Note
+
+In order to see the backend demo, make sure to run this development server locally in the background: [`Backend Server`](https://github.com/Willy-Chan/verbatim).
+
+
 ## Getting Started
 
 First, run the development server:
